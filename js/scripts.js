@@ -51,4 +51,30 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // function InputCheckReq() {
+    //     var form = document.getElementById('contactForm');
+    //     if (form.name.value == '') {
+    //         window.alert("성함을 입력해주세요.")
+    //         return false;
+    //     }
+    //     if (!validEmailCheck(form.email)) {
+    //         window.alert("이메일 주소가 유효하지 않습니다.");
+    //         form.email.value = null;
+    //         form.email.focus();
+    //         return false;
+    //     }
+    //     if (!validPhoneNumberCheck(form.phone)) {
+    //         window.alert("핸드폰 번호가 유효하지 않습니다.");
+    //         form.phone.value = null;
+    //         form.phone.focus();
+    //         return false;
+    //     }
+    //     if (form.message.value == '') {
+    //         window.alert("문의사항을 입력해주세요.");
+    //         return false;
+    //     }
+    // }
+
+    // document.getElementById("contactForm").addEventListener('submit', InputCheckReq);
+
 });
