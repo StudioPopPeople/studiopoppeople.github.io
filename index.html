@@ -32,7 +32,7 @@
                 var pattern = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
                 return (obj.value.match(pattern) != null)
             };
-            
+
             window.onload = function() {
             document.getElementById('contactForm').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -365,13 +365,11 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <label>Name</label>
-                                <input class="form-control" id="name" type="text" placeholder="성함*"/>
+                                <input class="form-control" id="name" type="text" name="name" placeholder="성함*"/>
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
-                                <label>Email</label>
-                                <input class="form-control" id="email" type="email" placeholder="이메일 주소 *"/>
+                                <input class="form-control" id="email" type="email" name="email" placeholder="이메일 주소 *"/>
                             </div>
                             <!-- Phone number input-->
                             <!--div class="form-group mb-md-0">
@@ -381,8 +379,7 @@
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <label>Message</label>
-                                <textarea class="form-control" id="message" placeholder="문의사항 *"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="문의사항 *"></textarea>
                             </div>
                         </div>
                     </div>
